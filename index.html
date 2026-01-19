@@ -33,15 +33,47 @@
 
     </header>
     <!-- banner section start -->
-     <section class="relative bg-[url(/assets/hero-bg.png)] bg-cover bg-center h-[466px] sm:h-[760px] flex items-center justify-center">
-        <div>
-            <img src="./assets/hero-circle.png" alt="">
-            <img src="./assets/microphone.png" alt="">
-            <span>New</span>
+        <section class="relative bg-[url(/assets/hero-bg.png)] bg-cover bg-center h-[466px] sm:h-[760px] flex justify-center overflow-hidden">
+        <div class="flex flex-col text-center justify-center  px-4">
+
+            <div class="relative mx-auto flex items-center justify-center
+                        w-[200px] h-[200px] sm:w-[350px] sm:h-[350px]">
+                        <img class="w-full h-full" src="./assets/hero-circle.png" alt="">
+                        <img class="absolute w-[66px] h-[100px] sm:w-[116px] sm:h-[175px]" src="./assets/microphone.png" alt="">
+                        <span class="absolute top-3 right-3 sm:top-3 sm:right-6
+                                bg-[#00FF88] text-[14px] sm:text-[18px] px-4 py-2 rounded-full text-black font-semibold
+                            shadow-[0_0_15px_#00FF88] 
+                            hover:shadow-[0_0_25px_#00FF88] transition-shadow duration-300">NEW</span>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                
+                    <h1 class="font-extrabold text-white text-[40px] sm:text-6xl mt-6 sm:mt-10">
+                    TechWave
+                    </h1>
+
+                    <p class="text-white text-center mt-2 max-w-[360px] sm:max-w-[600px]">
+                    Your daily dose of tech insights, productivity hacks, and personal growth
+                    </p>
+
+            </div>
+
+            <div class="flex gap-2 justify-center mt-4 sm:mt-6">
+                <div class="flex items-center px-6 py-2 rounded-2xl
+                            bg-[linear-gradient(-135deg,#9100F8,#FB09B4,#F7E93F)]
+                            hover:scale-105 transition duration-300 gap-1">
+                    <img class="h-5 w-5" src="./assets/spotify.png" alt="">
+                    <button class="text-white">Listen on Spotify</button>
+                </div>
+
+                <div class="flex items-center px-6 py-2 rounded-2xl
+                            hover:scale-105 transition duration-300 gap-1
+                            border-2 border-[#00FF88]">
+                    <img class="h-5 w-5" src="./assets/message.png" alt="">
+                    <button class="text-[#00FF88]">Subscribe</button>
+                </div>
+            </div>
+
         </div>
-
-
-     </section>
-    
+</section>  
 </body>
 </html>
